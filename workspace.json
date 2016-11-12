@@ -1,0 +1,1216 @@
+{
+  "name": "FinanceBot",
+  "created": "2016-10-18T18:49:09.672Z",
+  "intents": [
+    {
+      "intent": "capabilities",
+      "created": "2016-10-18T18:49:09.672Z",
+      "examples": [
+        {
+          "text": "help",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "help me",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "How are you going to help me",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how can you help me",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "need help",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "tell me what things you can do",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "tell me what you can do",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "What are you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what are you capable of",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what are your capabilities Watson",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what can I do",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "What can i say",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what can you do",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what can you do for me",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what can you help me with",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what do you know",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what else",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what things can you do",
+          "created": "2016-10-18T18:49:09.672Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "goodbyes",
+      "created": "2016-10-18T18:49:09.672Z",
+      "examples": [
+        {
+          "text": "adieu",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "adios",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "au revoir",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "bye",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "bye bye",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "bye now",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "cya",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "farewell",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "go",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "goodbye",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "good bye",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "good day",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "good night",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "gotta go",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "gotta run",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "gtg",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I'm leaving",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "later",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "laters",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "leave",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "logging off",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "my time is up",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "ok bye",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "out of time",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "over and out",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "run",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "see ya",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "see ya later",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "see ya soon",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "see you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "should be going",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "should go",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "signing off",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "signing out",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "so long",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "soon",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "thanks watson",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "thank you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "then bye",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "toodles",
+          "created": "2016-10-18T18:49:09.672Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "greetings",
+      "created": "2016-10-18T18:49:09.672Z",
+      "examples": [
+        {
+          "text": "aloha",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "bad",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "bonjour",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "buenos dias",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "ciao",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "feeling bit low",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "g'day",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "good",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "good day",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "good evening",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "good how are you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "good morning",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "greetings",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Hello",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Hello, how are you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Hello Watson",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "hey",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "heya",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "hey there",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "hi",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "hi how are u",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "hi there",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Hi watson",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "hiya",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Hola",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "hola como estas",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "How are you doing",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "howdy",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I am not feeling good",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I'm feeling good thanks",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Its not that good",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "namaste",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "What's up",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "yello",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "yo",
+          "created": "2016-10-18T18:49:09.672Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "not_specified",
+      "created": "2016-10-18T18:49:09.672Z",
+      "examples": [
+        {
+          "text": "any",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "anything",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "doesn't matter",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "no preference",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "whatever",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "you decide",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "your favorite",
+          "created": "2016-10-18T18:49:09.672Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "off_topic",
+      "created": "2016-10-18T18:49:09.672Z",
+      "examples": [
+        {
+          "text": "aho",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "asdasdasda",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "asdasidjiwe",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "book a flight for NY on sunday",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "carrot",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "cats are my favorite animal",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "cold",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "cool",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "culd",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "deploy airbags",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "dfddfg",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "don't you know any jokes",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "do you hate",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Do you like",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "do you love",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "fdsafsaHi watson",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "funny",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "go fast",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "go slow",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "hot",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how close is",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how far is",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how far is the moon",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how far to",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how many licks does it take to get to the center of a tootsie roll",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how much do you weigh",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how old are you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "how tall are you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "huhu",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I'd like to have dinner with you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I enjoy petting cats",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I love dolphins",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I love spicy food",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "i need a new wheelchair",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I need to shut it down",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "it's too dark",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "i want jokes",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I want to date you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I want to eat tacos everyday",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "i want to see how this demo works",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "I want to talk",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "know any jokes",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "lgiths",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "lgits",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "make me a sandwich",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "near",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "nope",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Nuts",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "ok watson, why should I use you",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "open door",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "please open the sunroof",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "poop",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Post-it notes taste terrible.",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "repair my car",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "roll down windows",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "shutdown",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "shut down",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "sup",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "system error, unable to lonin",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "tell me a joke",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "tell me joke",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "tell me jokes",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "tell me some jokes",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "tell me your favorite color",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "tell me your favorite foods",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "test",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "testing om",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "This is awesome",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "This is good",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Turn left",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what is my speed",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what is your name",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what kind of food do you eat",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "What's the speed",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "whats the square root of 70",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what's the time",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what's up",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what's your",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what's your favorite",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "whats your favorite color",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "whats your favorite movie",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what's your name",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "whats your name",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what time is it",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "what types of food do you like",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "when will it be funny",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Where are we",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "where is the poop deck on this ship",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "where should I turn",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "which color is best for wedding",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "why",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "why is the sky blue",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "yeah",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "yes",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "Yolo",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "you are funny",
+          "created": "2016-10-18T18:49:09.672Z"
+        },
+        {
+          "text": "You're asking me too much",
+          "created": "2016-10-18T18:49:09.672Z"
+        }
+      ],
+      "description": null
+    },
+  ],
+  "updated": "2016-10-18T19:59:06.188Z",
+  "entities": [
+  ],
+  "language": "en",
+  "metadata": null,
+  "description": "FinanceBot is a chatbot that provides key financial information.",
+  "dialog_nodes": [
+    {
+      "go_to": null,
+      "output": {
+        "text": "Hello! I'm doing good. I'm here to help you. Just say the word."
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "#greetings",
+      "description": null,
+      "dialog_node": "node_7_1468608329601",
+      "previous_sibling": "node_11_1468608786372"
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": "I am having trouble understanding you. Try asking your question in a different way."
+      },
+      "parent": "node_2_1467221939202",
+      "context": {
+        "default_counter": 0
+      },
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "$default_counter>2",
+      "description": null,
+      "dialog_node": "node_1_1467919680248",
+      "previous_sibling": null
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": "I'm not sure about that. You can say things like \"Where is the closest ATM?\" or \"What stocks should I invest in?\""
+      },
+      "parent": "node_2_1467221939202",
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "true",
+      "description": null,
+      "dialog_node": "node_2_1467919781627",
+      "previous_sibling": "node_1_1467919680248"
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": "Sure! Let me know if you have more requests or questions."
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "#goodbyes",
+      "description": null,
+      "dialog_node": "node_8_1468608349230",
+      "previous_sibling": "node_7_1468608329601"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_10_1467233806357"
+      },
+      "output": {
+
+      },
+      "parent": "node_9_1467233775768",
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "true",
+      "description": null,
+      "dialog_node": "node_3_1469811993652",
+      "previous_sibling": "node_18_1467234505187"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_1_1467919680248"
+      },
+      "output": {
+        "text": ""
+      },
+      "parent": null,
+      "context": {
+        "default_counter": "<?$default_counter+1?>"
+      },
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "anything_else",
+      "description": null,
+      "dialog_node": "node_2_1467221939202",
+      "previous_sibling": "node_1_1467743415843"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_1_1467994455318"
+      },
+      "output": {
+        "text": ""
+      },
+      "parent": "node_1_1467232431348",
+      "context": {
+        "reprompt": true
+      },
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "@appliance",
+      "description": null,
+      "dialog_node": "node_2_1467232480480",
+      "previous_sibling": "node_4_1469816307739"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_2_1467233413666"
+      },
+      "output": {
+
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "#turn_down",
+      "description": null,
+      "dialog_node": "node_1_1467233388598",
+      "previous_sibling": "node_10_1467233003109"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_5_1469049934217"
+      },
+      "output": {
+
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "#turn_on",
+      "description": null,
+      "dialog_node": "node_1_1467232431348",
+      "previous_sibling": "node_1_1467221909631"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_8_1467232810733"
+      },
+      "output": {
+
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "#turn_off",
+      "description": null,
+      "dialog_node": "node_7_1467232789215",
+      "previous_sibling": "node_1_1467232431348"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_8_1467233758272"
+      },
+      "output": {
+
+      },
+      "parent": null,
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "#locate_amenity",
+      "description": null,
+      "dialog_node": "node_7_1467233747449",
+      "previous_sibling": "node_6_1467233590477"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_9_1467233775768"
+      },
+      "output": {
+
+      },
+      "parent": "node_10_1467233806357",
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "true",
+      "description": null,
+      "dialog_node": "node_4_1469812033731",
+      "previous_sibling": "node_14_1467234311677"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_9_1467233775768"
+      },
+      "output": {
+
+      },
+      "parent": "node_11_1467233815579",
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "true",
+      "description": null,
+      "dialog_node": "node_2_1469811953121",
+      "previous_sibling": "node_20_1467234565322"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_9_1467233775768"
+      },
+      "output": {
+
+      },
+      "parent": "node_7_1467233747449",
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "@amenity",
+      "description": null,
+      "dialog_node": "node_8_1467233758272",
+      "previous_sibling": null
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_1_1467994522653"
+      },
+      "output": {
+        "text": "Sorry I don't recognize that genre. Want to try something? Jazz? Rock?"
+      },
+      "parent": "node_1_1467994455318",
+      "context": {
+        "reprompt": false
+      },
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "$reprompt",
+      "description": null,
+      "dialog_node": "node_2_1467994543354",
+      "previous_sibling": "node_11_1468364542917"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_13_1467234287024"
+      },
+      "output": {
+        "text": "I see a few nearby restaurants serving tacos, burgers, seafood and pasta. You can select one of these."
+      },
+      "parent": "node_10_1467233806357",
+      "context": {
+        "reprompt": false
+      },
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "$reprompt",
+      "description": null,
+      "dialog_node": "node_14_1467234311677",
+      "previous_sibling": "node_7_1469824258064"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_13_1467234287024"
+      },
+      "output": {
+        "text": "It doesn't look like there are any restaurants that serve @cuisine_bad around you. Try saying things like burgers or tacos."
+      },
+      "parent": "node_10_1467233806357",
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "@cuisine_bad",
+      "description": null,
+      "dialog_node": "node_9_1468364300050",
+      "previous_sibling": "node_13_1467234287024"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_15_1467234349255"
+      },
+      "output": {
+        "text": "I love tacos. I'm sure you'll love them too! Which restaurant do you want to drive to?"
+      },
+      "parent": "node_10_1467233806357",
+      "context": null,
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "#not_specified",
+      "description": null,
+      "dialog_node": "node_7_1469824258064",
+      "previous_sibling": "node_9_1468364300050"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_15_1467234349255"
+      },
+      "output": {
+        "text": "Which option would you like? You can say first, third, nearest and so on."
+      },
+      "parent": "node_13_1467234287024",
+      "context": {
+        "reprompt": false
+      },
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "$reprompt",
+      "description": null,
+      "dialog_node": "node_16_1467234390805",
+      "previous_sibling": "node_15_1467234349255"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_17_1467234455512"
+      },
+      "output": {
+        "text": "Which option would you like? You can say first, third, nearest and so on."
+      },
+      "parent": "node_9_1467233775768",
+      "context": {
+        "reprompt": false
+      },
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "$reprompt",
+      "description": null,
+      "dialog_node": "node_18_1467234505187",
+      "previous_sibling": "node_6_1469824228742"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_19_1467234523021"
+      },
+      "output": {
+        "text": "Which option would you like? You can say first, third, nearest and so on."
+      },
+      "parent": "node_11_1467233815579",
+      "context": {
+        "reprompt": false
+      },
+      "created": "2016-10-18T18:49:09.672Z",
+      "metadata": null,
+      "conditions": "$reprompt",
+      "description": null,
+      "dialog_node": "node_20_1467234565322",
+      "previous_sibling": "node_8_1469824417089"
+    }
+  ],
+  "workspace_id": "12bca74d-553d-4a86-986a-5318428f5ae7"
+}
