@@ -30,8 +30,8 @@ def find_atms(lat, lng, rad):
 		dic['dist'] = (dic[u'geocode'][u'lat'] - lat)**2 + \
  		 (dic[u'geocode'][u'lng'] - lng)**2
 	sort = sorted(arr, key=lambda dic: dic['dist'])
-	for i in range(len(arr)):
-		print arr[i]['dist']
+	# for i in range(len(arr)):
+	#	print arr[i]['dist']
 	return sort
 
 
@@ -56,16 +56,6 @@ def run_atm(rad, address):
 
 	return (rad, str(location))
 
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-
-
 def find_branches(lat, lng, rad):
 	url = 'http://api.reimaginebanking.com/branches'
 	apiKey = '22827101aa2aed5f76342f276b3e38fb'
@@ -78,14 +68,21 @@ def find_branches(lat, lng, rad):
 	  }
 	r = requests.get(url, params = payload)
 	### NEED TO CHANGE THIS COMMENTED OUT CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-	# arr = r.json()[u'data']
+	arr = r.json()
+	for branch in arr:
+		branch_lat = branch['geocode']['lat']
+		branch_lng = branch['geocode']['lng']
+		dist = (branch_lat - lat)**2 + (branch_lng - lng)**2
+		branch['dist'] = dist
+	sort = sorted(arr, key=lambda branch: branch['dist'])
+	
 	# for dic in arr:
 	# 	dic['dist'] = (dic[u'geocode'][u'lat'] - lat)**2 + (dic[u'geocode'][u'lng'] - lng)**2
 	# sort = sorted(arr, key=lambda dic: dic['dist'])
 	return sort
 
 
-def run_branches(rad, address):
+def run_branch(rad, address):
 	if rad is '':
 		rad = '1'
 	else:
