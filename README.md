@@ -2,7 +2,7 @@
 
 Made at Calhacks 3.0 with:
 
-(11/13/16) Capital One API, IBM Watson Conversation API
+ - (11/13/16) Capital One API, IBM Watson Conversation API
 
 Devpost link: https://devpost.com/software/w-atm-son
 
