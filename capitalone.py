@@ -22,11 +22,16 @@ def find_atms(lat, lng, rad):
 	    "rad": rad,
 	    "key": apiKey
 	  }
-	r = requests.get(url, params = payload)
+	print 
+	r = requests.get(url, params = payload, headers={'content-type':'application/json'})
 	arr = r.json()[u'data']
+	# print json.dumps(r.json(), indent=2)
 	for dic in arr:
-		dic['dist'] = (dic[u'geocode'][u'lat'] - lat)**2 + (dic[u'geocode'][u'lng'] - lng)**2
+		dic['dist'] = (dic[u'geocode'][u'lat'] - lat)**2 + \
+ 		 (dic[u'geocode'][u'lng'] - lng)**2
 	sort = sorted(arr, key=lambda dic: dic['dist'])
+	# for i in range(len(arr)):
+	#	print arr[i]['dist']
 	return sort
 
 
@@ -45,20 +50,11 @@ def run_atm(rad, address):
 	
 	best_atm = atms[0]
 	address = best_atm[u'address']
-	location = "%s %s, %s %s %s" % (address[u'street_number'], address[u'street_name'], address[u'city'],\
+	location = "%s %s, %s %s %s" % (address[u'street_number'],\
+	 address[u'street_name'], address[u'city'],\
 	 address[u'state'], address[u'zip'], )
 
 	return (rad, str(location))
-
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-### NEED TO CHANGE THIS BELOW CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-
 
 def find_branches(lat, lng, rad):
 	url = 'http://api.reimaginebanking.com/branches'
@@ -72,14 +68,21 @@ def find_branches(lat, lng, rad):
 	  }
 	r = requests.get(url, params = payload)
 	### NEED TO CHANGE THIS COMMENTED OUT CODE TO WORK WITH A LIST, SINCE BRANCHES ARE DISPLAYED IN A LIST NOT A DICTIONARY ###
-	# arr = r.json()[u'data']
+	arr = r.json()
+	for branch in arr:
+		branch_lat = branch['geocode']['lat']
+		branch_lng = branch['geocode']['lng']
+		dist = (branch_lat - lat)**2 + (branch_lng - lng)**2
+		branch['dist'] = dist
+	sort = sorted(arr, key=lambda branch: branch['dist'])
+	
 	# for dic in arr:
 	# 	dic['dist'] = (dic[u'geocode'][u'lat'] - lat)**2 + (dic[u'geocode'][u'lng'] - lng)**2
 	# sort = sorted(arr, key=lambda dic: dic['dist'])
 	return sort
 
 
-def run_branches(rad, address):
+def run_branch(rad, address):
 	if rad is '':
 		rad = '1'
 	else:
