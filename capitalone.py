@@ -19,21 +19,27 @@ def find_atms(lat, lng, rad):
 	    "lat": lat,
 	    "lng": lng,
 	    "accessibility": True,
-	    "rad": 1,
+	    "rad": rad,
 	    "key": apiKey
 	  }
-	r = requests.get(url, params = payload)
+	print 
+	r = requests.get(url, params = payload, headers={'content-type':'application/json'})
 	arr = r.json()[u'data']
+	# print json.dumps(r.json(), indent=2)
 	for dic in arr:
-		dic['dist'] = (dic[u'geocode'][u'lat'] - lat)**2 + (dic[u'geocode'][u'lng'] - lng)**2
+		dic['dist'] = (dic[u'geocode'][u'lat'] - lat)**2 + \
+ 		 (dic[u'geocode'][u'lng'] - lng)**2
 	sort = sorted(arr, key=lambda dic: dic['dist'])
+	for i in range(len(arr)):
+		print arr[i]['dist']
 	return sort
 
 
 def main():
 	debug = 1;
 	if debug == 1:
-		address = '6930 Old Dominion Dr, McLean, VA 22101'
+		#address = '6930 Old Dominion Dr, McLean, VA 22101'
+		address = '1724 Chain Bridge Rd, McLean, VA 22101'
 	else:
 		address = raw_input("Enter an address: ")
 
@@ -44,9 +50,11 @@ def main():
 	
 	best_atm = atms[0]
 	address = best_atm[u'address']
-	location = "%s %s, %s %s %s" % (address[u'street_number'], address[u'street_name'], address[u'city'],\
+	location = "%s %s, %s %s %s" % (address[u'street_number'],\
+	 address[u'street_name'], address[u'city'],\
 	 address[u'state'], address[u'zip'], )
-
-	print location
+	distance = best_atm['dist']
+	if debug == 1:
+		print location, distance
 main()
 	
