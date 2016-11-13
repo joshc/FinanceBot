@@ -22,7 +22,7 @@ def find_atms(lat, lng, rad):
 	    "rad": rad,
 	    "key": apiKey
 	  }
-	print 
+	 
 	r = requests.get(url, params = payload, headers={'content-type':'application/json'})
 	arr = r.json()[u'data']
 	# print json.dumps(r.json(), indent=2)
@@ -47,7 +47,8 @@ def run_atm(rad, address):
 	atms = find_atms(coords['lat'], coords['lng'], rad)
 	#for atm in atms:
 	#	print atm['dist'], atm[u'_id'], '(', atm[u'geocode'][u'lat'], ', ', atm[u'geocode'][u'lng'], ')'
-	
+	if len(atms) == 0:
+		return (rad, '')
 	best_atm = atms[0]
 	address = best_atm[u'address']
 	location = "%s %s, %s %s %s" % (address[u'street_number'],\
@@ -96,6 +97,8 @@ def run_branch(rad, address):
 	#for atm in atms:
 	#	print atm['dist'], atm[u'_id'], '(', atm[u'geocode'][u'lat'], ', ', atm[u'geocode'][u'lng'], ')'
 	
+	if len(branches) == 0:
+		return (rad, '')
 	best_branch = branches[0]
 	address = best_branch[u'address']
 	location = "%s %s, %s %s %s" % (address[u'street_number'], address[u'street_name'], address[u'city'],\
