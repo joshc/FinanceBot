@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	<h2>FinanceBot</h2>
+	<form action="." method = "POST">
+		<input type="message" name="message">
+		<input type="submit" name="chat" value="Send">
+	</form>
+	{% if html_table %}
+		{{ html_table }}
+	{% endif %}
+</body>
+</html>
