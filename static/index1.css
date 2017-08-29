@@ -25,7 +25,7 @@ input {
 #chatbox {
     z-index: 0;
     height: 100%;
-    width: 80%
+    width: 80%;
     font-size: 2vw;
     margin-top: 3vh;
 }
