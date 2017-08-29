@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 from flask import render_template
 import requests
-import financebot
+#import financebot
 
 app = Flask(__name__)
 
@@ -23,9 +23,9 @@ def chat_messages(msg_list):
 def chat():
     global all_msgs
     global response
-    bot_message, response = financebot.evaluate_message('', response)
+    #bot_message, response = financebot.evaluate_message('', response)
     #print bot_message
-    all_msgs = [bot_message] + all_msgs
+    #all_msgs = [bot_message] + all_msgs
     return render_template("index.html", html_table = chat_messages(all_msgs))
 
 @app.route('/', methods=['POST'])
@@ -33,10 +33,10 @@ def chat_post():
     global all_msgs
     global response
     message = request.form['message']
-    bot_message, response = financebot.evaluate_message(message, response)
+    #bot_message, response = financebot.evaluate_message(message, response)
     #print message, bot_message
-    all_msgs = [['User', str(message)]] + all_msgs
-    all_msgs = [bot_message] + all_msgs
+    all_msgs = [['User: ', str(message)]] + all_msgs
+    #all_msgs = [bot_message] + all_msgs
     return render_template("index.html", html_table = chat_messages(all_msgs))
 
 if __name__ == '__main__':

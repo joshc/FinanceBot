@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='index.css') }}"></link>
+        <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='index1.css') }}"></link>
     </head>
     <body>
     	<h2>FinanceBot</h2>
     	<form action="." id="chat_area" method = "POST">
-    		<input type="message" name="message">
+    		<input type="message" name="message" size="35">
     		<input type="submit" name="chat" value="Send">
     	</form>
     	{% if html_table %}
